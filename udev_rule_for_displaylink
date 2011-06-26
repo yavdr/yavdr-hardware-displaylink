@@ -1,0 +1,1 @@
+KERNEL=="fb?", ATTRS{configuration}=="DisplayLink", SYMLINK+="fb9"

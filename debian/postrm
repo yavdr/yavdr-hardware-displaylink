@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ remove = "$1" ]; then 
+	rm -f /etc/init/graphtft-fe.conf
+        echo "-d none" >/usr/share/yavdr/templates/etc/vdr/plugins/plugin.graphtft.conf/10main
+	process-template /etc/vdr/plugins/plugin.graphtft.conf
+fi 
+
+#DEBHELPER#
+

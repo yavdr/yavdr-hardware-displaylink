@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "activate templates for displaylink"
+process-template /etc/init/graphtft-fe.conf
+process-template /etc/vdr/plugins/plugin.graphtft.conf

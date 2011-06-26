@@ -1,0 +1,7 @@
+<?cs if:(vdr.plugin.graphtft.displaylinkenabled == "1") ?>
+-d /dev/fb9
+<?cs /if ?>
+
+<?cs if:(vdr.plugin.graphtft.enabled == "1") ?>
+-d none
+<?cs /if ?>

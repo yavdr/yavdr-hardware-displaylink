@@ -1,0 +1,14 @@
+Source: yavdr-hardware-displaylink
+Section: misc
+Priority: optional
+Maintainer: Kristian Lorbetzki <lorbi@gmx.net>
+Uploaders: Holger Schvestka <hotzenplotz5@gmx.de>
+Standards-Version: 3.9.1
+Build-Depends: cdbs, debhelper (>= 7.0.50~)
+
+Package: yavdr-hardware-displaylink
+Architecture: all
+Replaces: yavdr-utils
+Depends: ${misc:Depends}, yavdr-utils, vdr-plugin-graphtft, udlfb-dkms (=0.2.3)
+Description: yavdr-hardware-displaylink package to install and configure USB Displaylink devices
+   yavdr-hardware-displaylink package to install and configure USB Displaylink devices

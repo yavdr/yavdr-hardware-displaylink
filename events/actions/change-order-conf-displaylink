@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [  $(dbget vdr.plugin.graphtft.displaylinkenabled)x == "x" ]; then
+
+	echo "failure in install procedure, no database entry for displaylinkenabled"
+else
+	if [ $(dbget vdr.plugin.graphtft.displaylinkenabled) == "1" ]; then
+		echo "activate graphtft-plugin in order.conf"
+		sed -i 's/^-graphtft/graphtft/' /etc/vdr/plugins/order.conf
+	fi
+
+	if [ $(dbget vdr.plugin.graphtft.displaylinkenabled) == "0" ]; then
+        	echo "deactivate graphtft-plugin in order.conf"
+       		sed -i 's/^graphtft/-graphtft/' /etc/vdr/plugins/order.conf
+	fi
+fi

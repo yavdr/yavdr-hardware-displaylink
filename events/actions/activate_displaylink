@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ $(dbget vdr.plugin.graphtft.displaylinkenabled)x == "x" ]; then
+	echo "no database entry, create it."
+	dbset vdr.plugin.graphtft.displaylinkenabled=0
+fi
+
+if [ $(dbget vdr.plugin.graphtft.displaylinkenabled) == "0" ]; then
+        echo "activate in database"
+        dbset vdr.plugin.graphtft.displaylinkenabled=1
+	dbset vdr.plugin.graphtft.enabled=0
+fi
+

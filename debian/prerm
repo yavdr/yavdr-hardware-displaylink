@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ remove = "$1" ]; then
+        signal-event deactivate-displaylink
+fi
+
+#DEBHELPER#
+
+

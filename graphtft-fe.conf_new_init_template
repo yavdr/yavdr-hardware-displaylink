@@ -1,0 +1,5 @@
+<?cs if:(vdr.plugin.graphtft.displaylinkenabled == "1") ?>
+script
+while true; do echo "" >/dev/fb9; sleep 0.5; done
+end script
+<?cs /if ?>
